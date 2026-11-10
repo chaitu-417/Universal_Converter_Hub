@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .nav-links {
+    display: none; /* In a real app, you'd add a hamburger menu */
+  }
+  
+  .conversion-row {
+    flex-direction: column;
+  }
+  
+  .swap-btn {
+    align-self: center;
+    transform: rotate(90deg);
+  }
+  
+  .swap-btn:hover {
+    transform: rotate(270deg);
+  }
+  
+  .main-content {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .result-value {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,130 @@
+/* Home Page */
+.hero-section {
+  text-align: center;
+  padding: 4rem 0;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+/* Search Section */
+.search-container {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  position: relative;
+}
+
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  color: var(--text-secondary);
+}
+
+.search-input {
+  width: 100%;
+  padding: 1.25rem 1.25rem 1.25rem 3rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  border: var(--glass-border);
+  background: var(--surface-color);
+  color: var(--text-primary);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-fast);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.12);
+}
+
+/* Grids */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Converter Page */
+.converter-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.converter-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.converter-body {
+  display: grid;
+  gap: 2rem;
+}
+
+.conversion-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.conversion-col {
+  flex: 1;
+}
+
+.swap-btn {
+  background: var(--surface-color);
+  border: var(--glass-border);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  transition: transform var(--transition-fast);
+  align-self: flex-end;
+  margin-bottom: 0.25rem;
+}
+
+.swap-btn:hover {
+  transform: rotate(180deg);
+}
+
+/* Result Box */
+.result-box {
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(29, 78, 216, 0.08), rgba(99, 102, 241, 0.08));
+  border-radius: var(--border-radius-lg);
+  border: var(--glass-border);
+}
+
+.result-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: var(--font-numbers);
+  color: var(--color-primary);
+}
