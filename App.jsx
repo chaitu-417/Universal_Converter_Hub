@@ -1,19 +1,11 @@
 import React from 'react';
-import { RouterProvider } from 'react-router-dom';
-import { router } from './router';
-import { ThemeProvider } from './context/ThemeContext';
-import { AuthProvider } from './context/AuthContext';
-import { FavoritesProvider } from './context/FavoritesContext';
 
 function App() {
   return (
-    <ThemeProvider>
-      <AuthProvider>
-        <FavoritesProvider>
-          <RouterProvider router={router} />
-        </FavoritesProvider>
-      </AuthProvider>
-    </ThemeProvider>
+    <div style={{ padding: '40px', textAlign: 'center', fontFamily: 'sans-serif' }}>
+      <h1>Universal Converter Hub</h1>
+      <p>Site is live! App is loading...</p>
+    </div>
   );
 }
 
